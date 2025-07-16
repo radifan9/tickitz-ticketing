@@ -20,6 +20,8 @@ body {
   background-size: auto;
 
   font-family: Mulish, Arial;
+
+  margin-bottom: 64px;
 }
 
 .main-page {
@@ -48,25 +50,54 @@ body {
 .outer-steps {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   gap: 12px;
 }
 
 .steps {
   margin: 32px auto 32px auto;
-
   display: flex;
-  gap: 128px;
+  gap: 24px;
+
+  align-items: center;
+}
+
+.steps > span:nth-child(2),
+.steps > span:nth-child(4) {
+  width: 64px;
+  border-bottom: 2px dashed #a0a3bd;
 }
 
 .steps-num {
   height: 47px;
   width: 47px;
 
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: #1d4ed8;
   border-radius: 50%;
   color: white;
+}
+
+.steps-num-off {
+  background-color: #a0a3bd;
+}
+
+.steps-text {
+  white-space: nowrap;
+}
+
+.steps-text-off {
+  color: #a0a3bd;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .user-input {
@@ -88,6 +119,30 @@ body {
   color: white;
 }
 
+.already-have {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.or {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.or > span:nth-child(2) {
+  font-size: 12px;
+  color: #a0a3bd;
+}
+
+.or > span:nth-child(1),
+.or > span:nth-child(3) {
+  width: 100%;
+  border-bottom: 1px solid #a0a3bd;
+}
+
 .login-other {
   display: flex;
   justify-content: center;
@@ -98,6 +153,12 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  padding: 18px 32px;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .login-icon {
@@ -112,7 +173,6 @@ body {
 }
 
 .login-method:visited {
-  /* color: #777; */
   color: #a0a3bd;
 }
 

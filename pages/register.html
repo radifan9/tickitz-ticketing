@@ -28,43 +28,52 @@
         <div class="steps">
           <span class="outer-steps">
             <div class="steps-num">1</div>
-            <p>Fill Form</p>
+            <p class="steps-text">Fill Form</p>
           </span>
+          <span></span>
           <span class="outer-steps">
-            <div class="steps-num">2</div>
-            <p>Activate</p>
+            <div class="steps-num steps-num-off">2</div>
+            <p class="steps-text steps-text-off">Activate</p>
           </span>
+          <span></span>
           <span class="outer-steps">
-            <div class="steps-num">3</div>
-            <p>Done</p>
+            <div class="steps-num steps-num-off">3</div>
+            <p class="steps-text steps-text-off">Done</p>
           </span>
         </div>
 
-        <!-- Email & Password -->
-        <div>
+        <!-- Email, Password, Button -->
+        <form class="form-register">
+          <!-- Email -->
           <div>
-            <label for="email">Email</label> <br />
+            <label class="user-label" for="email">Email</label> <br />
             <input class="user-input" type="email" id="email" />
           </div>
+
+          <!-- Password -->
           <div>
-            <label for="password">Password</label> <br />
+            <label class="user-label" for="password">Password</label> <br />
             <input class="user-input" type="password" id="password" />
           </div>
-        </div>
 
-        <!-- Button & Link -->
-        <div>
+          <!-- Button & Link -->
           <div>
             <input type="checkbox" />
             <label for="">I agree to terms & conditions</label>
           </div>
 
           <button class="btn-register">Join For Free Now</button>
+        </form>
 
-          <div>
-            <span>Already have an account?</span>
-            <a href="#">Log in</a>
-          </div>
+        <div class="already-have">
+          <span>Already have an account?</span>
+          <a href="#">Log in</a>
+        </div>
+
+        <div class="or">
+          <span></span>
+          <span>Or</span>
+          <span></span>
         </div>
 
         <!-- Login using other method -->
