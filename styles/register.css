@@ -5,12 +5,7 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-/* CSS Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url(./globals.css);
 
 body {
   background-color: black; /* Fallback color */
