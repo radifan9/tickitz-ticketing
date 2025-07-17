@@ -155,3 +155,41 @@ nav > ul > li > a {
   display: flex;
   flex-direction: column;
 }
+
+.why-us > div:nth-child(1) {
+  color: #1d4ed8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.why-us > div:nth-child(2) {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.why-us-multi {
+  display: flex;
+}
+
+.why-us-multi > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-us-multi > span > span {
+  padding: 27px;
+  background-color: #1d4ed833;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-us-multi > span > span > img {
+  width: 24px;
+
+  /* background-color: ; */
+}
