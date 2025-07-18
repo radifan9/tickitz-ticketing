@@ -29,8 +29,10 @@ main > section:nth-child(2) {
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   align-items: center;
+
+  margin-bottom: 128px;
 }
 
 .top-information {
@@ -75,42 +77,6 @@ main > section:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
 }
-/* 
-.btns-seat {
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-
-  justify-items: center;
-  align-items: center;
-
-  row-gap: 4px;
-  column-gap: 4px;
-
-  grid-template-areas:
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat"
-    "seat seat seat seat seat seat seat . . seat seat seat seat seat seat seat";
-}
-
-.btn-seat {
-  width: 26px;
-  height: 26px;
-  background-color: #d6d8e7;
-  border: 0;
-  border-radius: 4px;
-
-  grid-area: seat;
-}
-
-.btn-seat:hover {
-  background-color: #e2e4f3c2;
-  cursor: pointer;
-} */
 
 /* Choose Your Seat */
 .left-side > div:nth-child(2) {
@@ -124,6 +90,18 @@ main > section:nth-child(2) {
   font-size: 14px;
   font-weight: 600;
   color: #4e4b66;
+}
+
+/* Seating Key */
+.left-side > div:nth-child(5) {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.seating-key {
+  display: flex;
+  gap: 14px;
 }
 
 .selected {
@@ -221,4 +199,92 @@ main > section:nth-child(2) {
   font-size: 16px;
   font-weight: 600;
   color: white;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 80px;
+  margin-left: 128px;
+  margin-right: 128px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-side-side {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+
+.logo-slogan {
+  color: #6e7191;
+  gap: 8px;
+}
+
+.explore {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.explore-list {
+  font-size: 14px;
+}
+
+.explore-list > li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.explore-list > li > a {
+  text-decoration: none;
+  color: #4e4b66;
+}
+
+.sponsor {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.sponsor-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4b66;
+
+  align-self: center;
+  margin-bottom: 48px;
+}
+
+/* FOLLOW US */
+.follow {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.follow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.follow-list > li {
+  list-style: none;
+}
+
+.follow-list > li > a {
+  text-decoration: none;
+  color: #6e7191;
+
+  display: flex;
+  gap: 8px;
 }
