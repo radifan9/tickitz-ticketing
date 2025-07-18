@@ -1,0 +1,48 @@
+/* NAVBAR */
+nav {
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.navbar li:nth-child(2) {
+  margin-left: auto;
+}
+
+.navbar li:nth-child(5) {
+  margin-left: auto;
+}
+
+.navbar li:nth-child(6) {
+  margin-left: -48px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 64px;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.btn-signin {
+  padding: 12px 16px;
+  border: 1px solid #1d4ed8;
+  border-radius: 4px;
+  color: #1d4ed8;
+}
+.btn-signup {
+  padding: 12px 16px;
+  border: 1px solid #1d4ed8;
+  border-radius: 4px;
+  background-color: #1d4ed8;
+  color: white;
+}
