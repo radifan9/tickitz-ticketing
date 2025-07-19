@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/payment.css" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#"><img src="../assets/images/tickitz_blue.png" alt="" /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movie</a></li>
+        <li><a href="#">Buy Ticket</a></li>
+        <li><a class="btn-signin" href="#">Sign In</a></li>
+        <li><a class="btn-signup" href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>(steps)</div>
+      <form>
+        <!-- Payment Info -->
+        <div class="container-payment">
+          <h2>Payment Info</h2>
+
+          <!-- Date -->
+          <div class="payment-info">
+            <div class="payment-label">DATE & TIME</div>
+            <div class="payment-content">Tuesday, 07 July 2020 at 02:00pm</div>
+          </div>
+          <div class="full-hr-line"></div>
+
+          <!-- Title -->
+          <div class="payment-info">
+            <div class="payment-label">MOVIE TITLE</div>
+            <div class="payment-content">Spider-Man: Homecoming</div>
+          </div>
+          <div class="full-hr-line"></div>
+
+          <!-- Cinema -->
+          <div class="payment-info">
+            <div class="payment-label">CINEMA NAME</div>
+            <div class="payment-content">CineOne21 Cinema</div>
+          </div>
+          <div class="full-hr-line"></div>
+
+          <!-- Tickets -->
+          <div class="payment-info">
+            <div class="payment-label">NUMBER OF TICKETS</div>
+            <div class="payment-content">3 pieces</div>
+          </div>
+          <div class="full-hr-line"></div>
+
+          <!-- Total Payment -->
+          <div class="payment-info">
+            <div class="payment-label">TOTAL PAYMENT</div>
+            <div class="payment-content total-payment">$30,00</div>
+          </div>
+          <div class="full-hr-line"></div>
+        </div>
+
+        <!-- Personal Info -->
+        <div class="container-personal">
+          <h2>Personal Information</h2>
+
+          <!-- Full Name -->
+          <div class="payment-info">
+            <label class="payment-label personal-label">Full Name</label>
+            <input
+              class="personal-content"
+              type="text"
+              placeholder="Jonas El Rodriguez"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="payment-info">
+            <label class="payment-label personal-label">Email</label>
+            <input
+              class="personal-content"
+              type="text"
+              placeholder="jonasrodri123@gmail.com"
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="payment-info">
+            <label class="payment-label personal-label">Phone Number</label>
+            <span></span>
+            <input
+              class="personal-content"
+              type="text"
+              placeholder="+62 | 81445687121"
+            />
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="container-method">
+          <h2>Payment Method</h2>
+          <div>
+            <button class="btn-method">
+              <img src="../assets/images/gpay.png" alt="GPay" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/logos_visa.png" alt="Visa" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/gopay.png" alt="Gopay" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/paypal.png" alt="Paypal" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/dana.png" alt="Dana" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/bca.png" alt="BCA" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/bri.png" alt="BRI" />
+            </button>
+
+            <button class="btn-method">
+              <img src="../assets/images/ovo.png" alt="OVO" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Payment Button -->
+        <button class="btn-pay">Pay your order</button>
+      </form>
+    </main>
+  </body>
+</html>

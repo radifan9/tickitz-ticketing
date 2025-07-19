@@ -11,16 +11,19 @@ body {
 }
 
 .poster-n-info {
-  /* position: relative; */
+  position: relative;
   display: flex;
 }
 
 .image-poster {
-  position: relative;
-  top: -190px;
+  position: absolute;
+  top: -200px;
 }
 
 .infos {
+  margin-left: 280px;
+  margin-bottom: 80px;
+
   display: flex;
   flex-direction: column;
 }
@@ -28,12 +31,15 @@ body {
 .about-movie {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  align-content: start;
 }
 
 .title-content {
   font-weight: 400;
   size: 14px;
   color: #8692a6;
+  margin-bottom: 8px;
 }
 
 .content-info {
@@ -43,6 +49,27 @@ body {
 }
 
 .container-synopsis {
+  margin-bottom: 48px;
+}
+
+.container-synopsis > h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container-synopsis > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #a0a3bd;
+}
+
+.container-book {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 32px;
 }
 
 .heading-book {
@@ -54,12 +81,13 @@ body {
 .book-choose {
   display: flex;
   gap: 18px;
+  justify-content: space-between;
 }
 
 .choose {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .choose > div {
@@ -69,11 +97,44 @@ body {
 }
 
 .choose > input {
-  padding: 12px;
+  padding: 12px 84px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #eff0f6;
 }
 
 .book-choose > span:nth-child(4) {
   align-self: flex-end;
+}
+
+.container-cinema {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading-cinema {
+  display: flex;
+  gap: 24px;
+}
+
+.heading-cinema > span {
+  font-weight: 700;
+  size: 18px;
+  color: #8692a6;
+}
+
+.container-btn-cinema {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cinema {
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  padding: 37px 64px;
+  cursor: pointer;
 }
 
 .book-choose > span > button,
@@ -83,6 +144,12 @@ body {
   background-color: #1d4ed8;
   border: 0;
   border-radius: 5px;
+}
+
+.btns-num {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 .btns-num > button:nth-child(1) {
@@ -123,4 +190,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   border-radius: 4px;
+}
+
+.btn-book {
+  margin-left: 43%;
 }
