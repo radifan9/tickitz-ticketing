@@ -1,0 +1,126 @@
+@import url(./globals.css);
+@import url(./navbar.css);
+
+body {
+  font-family: Mulish;
+}
+
+.main-section {
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.poster-n-info {
+  /* position: relative; */
+  display: flex;
+}
+
+.image-poster {
+  position: relative;
+  top: -190px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-movie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-content {
+  font-weight: 400;
+  size: 14px;
+  color: #8692a6;
+}
+
+.content-info {
+  font-weight: 400;
+  size: 16px;
+  color: #121212;
+}
+
+.container-synopsis {
+}
+
+.heading-book {
+  font-weight: 400;
+  font-size: 32px;
+  color: #121212;
+}
+
+.book-choose {
+  display: flex;
+  gap: 18px;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choose > div {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+
+.choose > input {
+  padding: 12px;
+}
+
+.book-choose > span:nth-child(4) {
+  align-self: flex-end;
+}
+
+.book-choose > span > button,
+.btn-book {
+  color: #f8fafc;
+  padding: 14px 48px;
+  background-color: #1d4ed8;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btns-num > button:nth-child(1) {
+  padding: 6px 12px;
+  border: 0;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.btns-num > button:nth-child(2) {
+  padding: 6px 12px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  color: #4e4b66;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.btns-num > button:nth-child(3) {
+  padding: 6px 12px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  color: #4e4b66;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.btns-num > button:nth-child(4) {
+  padding: 6px 12px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  color: #4e4b66;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
