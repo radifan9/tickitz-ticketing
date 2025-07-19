@@ -19,6 +19,18 @@ body {
   margin-bottom: 64px;
 }
 
+/* Add Masking */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
 /* MAIN PAGE + LOGO */
 .main-page {
   display: flex;
@@ -45,6 +57,7 @@ body {
   border-radius: 8px;
 }
 
+/* -- STEPS -- */
 .outer-steps {
   display: flex;
   flex-direction: column;
@@ -64,7 +77,15 @@ body {
 .steps > span:nth-child(2),
 .steps > span:nth-child(4) {
   width: 64px;
-  border-bottom: 2px dashed #a0a3bd;
+  border-bottom: 1px dashed #a0a3bd;
+  border-image: repeating-linear-gradient(
+      to right,
+      #a0a3bd 0,
+      #a0a3bd 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    1;
 }
 
 .steps-num {
@@ -110,6 +131,16 @@ body {
   display: block;
   width: 100%;
   height: 64px;
+
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+.user-input[type="email"],
+.user-input[type="password"] {
+  padding: 24px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* Terms & Conditions */
@@ -120,6 +151,12 @@ body {
 
 .form-register div:nth-child(3) > input {
   width: 24px;
+}
+
+.container-tAndC > label {
+  font-weight: 400;
+  font-size: 18px;
+  color: #696f79;
 }
 
 /* Register Button */
