@@ -6,6 +6,7 @@
 */
 
 @import url(./globals.css);
+@import url(./navbar.css);
 
 /* General Class, reusable */
 .blue-18-bold {
@@ -30,7 +31,6 @@ main {
   margin-right: 128px;
 }
 
-
 /* HORIZONTAL LINE */
 .full-hr-line {
   border-bottom: 1px solid #dedede;
@@ -41,6 +41,7 @@ main {
 .hero {
   display: flex;
   gap: 18px;
+  margin-bottom: 80px;
 }
 
 .hero > div {
@@ -60,13 +61,14 @@ main {
 }
 
 .hero > div > div:nth-child(3) {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
+  color: #a0a3bd;
 }
 
 /* Movie Grid (Right) */
 .movies-grid {
-  width: 100%;
+  min-width: 460px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,7 +83,7 @@ main {
 }
 
 .movies-grid > div:nth-child(1) {
-  background-image: url("../assets/images/john-wick-ballerina.jpg");
+  background-image: url("../assets/images/movies-1.png");
   background-size: cover;
   background-position: center;
   height: 170px;
@@ -90,7 +92,7 @@ main {
 }
 
 .movies-grid > div:nth-child(2) {
-  background-image: url("../assets/images/mufasa-the-lion-king.jpg");
+  background-image: url("../assets/images/movies-2.png");
   background-size: cover;
   background-position: center;
 
@@ -210,10 +212,103 @@ main {
   gap: 4px;
 }
 
+.launched-on {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d4ed8;
+}
+
 .genres > ul > li {
   color: #a0a3bd;
   background-color: #a0a3bd1a;
-  padding: 4px 18px;
-  border-radius: 18px;
+  padding: 4px 16px;
+  border-radius: 20px;
   font-size: 16px;
+}
+
+/* UPCOMING MOVIES */
+.upcoming-movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.upcoming-movies > ul {
+  display: flex;
+  list-style: none;
+}
+
+.upcoming-movies > div:first-child {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700;
+
+  align-self: flex-start;
+}
+
+.upcoming-movies > div:nth-child(2) {
+  font-size: 32px;
+  align-self: flex-start;
+}
+
+.upcoming-movies > ul {
+  display: flex;
+  gap: 8px;
+}
+
+.list-of-upcoming {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.subscribe {
+  background-color: #2563eb;
+  border: 0;
+  border-radius: 9px;
+  color: #ffffff;
+  padding: 58px 48px;
+  margin-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  position: relative;
+}
+
+.subscribe::after {
+  content: "";
+  border: 7px solid #ffffff;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 180px;
+  right: -170px;
+}
+
+.subscribe-text {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.subscribe > div > input {
+  padding: 18px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+  background-color: #2563eb;
+}
+
+.subscribe-button {
+  background-color: #ffffff;
+  border: 0;
+  padding: 18px 36px;
+  border-radius: 9px;
+  color: #1d4ed8;
+  font-weight: 500;
+  font-size: 18px;
 }
