@@ -33,8 +33,16 @@ main {
 
 /* HORIZONTAL LINE */
 .full-hr-line {
-  border-bottom: 1px solid #dedede;
-  margin-bottom: 51px;
+  width: 100%;
+  border-bottom: 1px dashed #a0a3bd;
+  border-image: repeating-linear-gradient(
+      to right,
+      #a0a3bd 0,
+      #a0a3bd 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    1;
 }
 
 /* HERO SECTION */

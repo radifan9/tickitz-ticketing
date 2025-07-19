@@ -1,0 +1,150 @@
+@import url(./globals.css);
+@import url(./navbar.css);
+
+main {
+  background-color: #a0a3bd33;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.t-left-side {
+  padding-left: 124px;
+  padding-right: 124px;
+
+  background-image: url(../assets/images/avengers.png);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+
+  z-index: 0;
+}
+
+.t-left-side > h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.t-left-side > p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffffb2;
+}
+
+.direction {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.t-left-side::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.t-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: 90px;
+  margin-right: 8%;
+}
+
+.t-shaped-el {
+  width: 295px;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t-shaped-el-qr {
+  margin-top: 32px;
+}
+
+.full-hr-line {
+  border-bottom: 1px solid #dedede;
+}
+
+.t-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 24px;
+}
+
+.t-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.t-info-title {
+  font-weight: 600;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.t-info-content {
+  font-weight: 600;
+  font-size: 14px;
+  color: #14142b;
+}
+
+.container-payed {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  width: 80%;
+  padding: 12px 18px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+}
+
+.btn-download {
+  padding: 14px 110px;
+  color: #1d4ed8;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background-color: transparent;
+  border: 1px solid #1d4ed8;
+  border-radius: 6px;
+}
+
+.btn-download > span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-done {
+  padding: 15px 148px;
+  color: #f7f7fc;
+
+  background-color: #1d4ed8;
+  border-radius: 6px;
+
+  font-weight: 600;
+  font-size: 16px;
+}
