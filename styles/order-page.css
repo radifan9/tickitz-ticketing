@@ -1,6 +1,7 @@
 @import url(globals.css);
 @import url(navbar.css);
 @import url(grid-seats.css);
+@import url(footer.css);
 
 body {
   font-family: Mulish;
@@ -17,6 +18,70 @@ main {
 main > section:nth-child(2) {
   display: flex;
   gap: 16px;
+}
+
+/* -- STEPS -- */
+.outer-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.steps {
+  margin: 32px auto 32px auto;
+  display: flex;
+  gap: 24px;
+
+  align-items: center;
+}
+
+.steps > span:nth-child(2),
+.steps > span:nth-child(4) {
+  width: 64px;
+  border-bottom: 1px dashed #a0a3bd;
+  border-image: repeating-linear-gradient(
+      to right,
+      #a0a3bd 0,
+      #a0a3bd 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    1;
+}
+
+.steps-num {
+  height: 47px;
+  width: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary);
+  border-radius: 50%;
+  color: white;
+}
+
+.steps-num-off {
+  background-color: #a0a3bd;
+}
+
+.steps-text {
+  white-space: nowrap;
+}
+
+.steps-text-off {
+  color: #a0a3bd;
+}
+
+.steps-green {
+  background-color: #008000;
+}
+
+.steps-blue {
+  background-color: #1d4ed8;
 }
 
 /* LEFT-SIDE */
@@ -45,11 +110,32 @@ main > section:nth-child(2) {
   justify-content: space-evenly;
 }
 
+.top-information > span {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* --- GENRES --- */
+.genres > ul {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.genres > ul > li {
+  color: #a0a3bd;
+  background-color: #a0a3bd1a;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
 .container-poster {
   height: 117px;
   width: 184px;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
 }
 
 .title {
@@ -286,4 +372,19 @@ footer {
 
   display: flex;
   gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  main > section:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    margin-bottom: 18px;
+  }
+
+  .right-side {
+    margin-bottom: 24px;
+  }
 }

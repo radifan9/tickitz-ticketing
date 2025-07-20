@@ -42,7 +42,7 @@ body {
   top: -200px;
 }
 
-/* GENRES */
+/* --- GENRES --- */
 .genres > ul {
   list-style: none;
   display: flex;
@@ -184,6 +184,11 @@ body {
   border-radius: 5px;
 }
 
+.btn-book {
+  margin-left: 43%;
+  text-decoration: none;
+}
+
 .btns-num {
   display: flex;
   justify-content: center;
@@ -228,10 +233,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   border-radius: 4px;
-}
-
-.btn-book {
-  margin-left: 43%;
 }
 
 /* --- RESPONSIVE --- */
