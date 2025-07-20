@@ -201,6 +201,11 @@ main::before {
   color: #a0a3bd;
 }
 
+.red-text {
+  color: #d00707;
+  font-weight: 400;
+}
+
 /* Button */
 .btn-check-pay {
   width: 100%;
