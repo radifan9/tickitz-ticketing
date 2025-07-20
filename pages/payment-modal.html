@@ -29,7 +29,28 @@
     </nav>
 
     <main>
-      <div>(steps)</div>
+      <!-- Step -->
+      <div class="steps">
+        <span class="outer-steps">
+          <div class="steps-num steps-green">
+            <img src="../assets/icons/check-small.png" alt="" />
+          </div>
+          <p class="steps-text">Dates And Time</p>
+        </span>
+        <span></span>
+        <span class="outer-steps">
+          <div class="steps-num steps-num-off steps-green">
+            <img src="../assets/icons/check-small.png" alt="" />
+          </div>
+          <p class="steps-text">Seat</p>
+        </span>
+        <span></span>
+        <span class="outer-steps">
+          <div class="steps-num steps-num-off steps-blue">3</div>
+          <p class="steps-text">Payment</p>
+        </span>
+      </div>
+
       <form>
         <!-- Payment Info -->
         <div class="container-payment">
@@ -164,7 +185,8 @@
           <b class="red-text">on June 23, 2023</b> . If the bill has not been
           paid by the specified time, it will be forfeited
         </p>
-        <button class="btn-check-pay">Check Payment</button>
+        <a class="btn-check-pay" href="./ticket-result.html">Check Payment</a>
+        <!-- <button>Check Payment</button> -->
         <button class="btn-pay-later">Pay Later</button>
       </section>
     </main>

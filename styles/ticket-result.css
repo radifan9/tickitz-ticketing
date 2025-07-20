@@ -1,5 +1,6 @@
 @import url(./globals.css);
 @import url(./navbar.css);
+@import url(./footer.css);
 
 main {
   background-color: #a0a3bd33;
@@ -147,4 +148,21 @@ main {
 
   font-weight: 600;
   font-size: 16px;
+
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .t-left-side > img {
+    margin-top: 32px;
+  }
+
+  .direction {
+    margin-bottom: 32px;
+  }
+
+  main {
+    flex-direction: column;
+  }
 }

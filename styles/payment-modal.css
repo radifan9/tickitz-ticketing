@@ -1,5 +1,6 @@
 @import url(./globals.css);
 @import url(./navbar.css);
+@import url(./footer.css);
 
 main {
   background-color: #a0a3bd33;
@@ -11,11 +12,76 @@ main {
   position: relative;
 }
 
+/* -- STEPS -- */
+.outer-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.steps {
+  margin: 32px auto 32px auto;
+  display: flex;
+  gap: 24px;
+
+  align-items: center;
+}
+
+.steps > span:nth-child(2),
+.steps > span:nth-child(4) {
+  width: 64px;
+  border-bottom: 1px dashed #a0a3bd;
+  border-image: repeating-linear-gradient(
+      to right,
+      #a0a3bd 0,
+      #a0a3bd 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    1;
+}
+
+.steps-num {
+  height: 47px;
+  width: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary);
+  border-radius: 50%;
+  color: white;
+}
+
+.steps-num-off {
+  background-color: #a0a3bd;
+}
+
+.steps-text {
+  white-space: nowrap;
+}
+
+.steps-text-off {
+  color: #a0a3bd;
+}
+
+.steps-green {
+  background-color: #008000;
+}
+
+.steps-blue {
+  background-color: #1d4ed8;
+}
+
 form {
   background-color: #ffffff;
   width: 732px;
   padding: 38px;
   border-radius: 6px;
+  margin-bottom: 48px;
 
   display: flex;
   flex-direction: column;
@@ -107,6 +173,10 @@ input[type="text"] {
   border-radius: 4px;
 
   cursor: pointer;
+
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-pay:hover {
@@ -209,7 +279,7 @@ main::before {
 /* Button */
 .btn-check-pay {
   width: 100%;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   color: #f7f7fc;
   background-color: #1d4ed8;
@@ -218,6 +288,10 @@ main::before {
   padding: 14px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-pay-later {
@@ -230,4 +304,20 @@ main::before {
   align-self: center;
 
   margin-bottom: 24px;
+}
+
+/* 
+.container-method > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+*/
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  .container-method > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -285,6 +285,12 @@ main > section:nth-child(2) {
   font-size: 16px;
   font-weight: 600;
   color: white;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* FOOTER */
