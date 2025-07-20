@@ -1,5 +1,6 @@
 @import url(./globals.css);
 @import url(./navbar.css);
+@import url(./footer.css);
 
 body {
   font-family: Mulish;
@@ -41,12 +42,28 @@ body {
   top: -200px;
 }
 
+/* GENRES */
+.genres > ul {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.genres > ul > li {
+  color: #a0a3bd;
+  background-color: #a0a3bd1a;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
 .infos {
   margin-left: 280px;
   margin-bottom: 80px;
 
   display: flex;
   flex-direction: column;
+  gap: 14px;
 }
 
 .about-movie {
@@ -215,4 +232,30 @@ body {
 
 .btn-book {
   margin-left: 43%;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  .image-poster {
+    position: relative;
+    top: -300px;
+  }
+
+  .poster-n-info {
+    flex-direction: column;
+  }
+
+  .infos {
+    margin-top: -270px;
+    margin-left: 0;
+  }
+
+  .book-choose {
+    flex-direction: column;
+  }
+
+  .container-btn-cinema {
+    flex-direction: column;
+    gap: 18px;
+  }
 }

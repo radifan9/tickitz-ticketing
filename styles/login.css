@@ -12,7 +12,7 @@ body {
   background-image: url(/assets/images/avengers.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 
   font-family: Mulish, Arial;
 
@@ -130,6 +130,11 @@ body::after {
   font-size: 16px;
   font-weight: 600;
   color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .already-have {
