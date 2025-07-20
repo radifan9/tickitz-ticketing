@@ -18,13 +18,20 @@
     <nav>
       <ul class="navbar">
         <li>
-          <a href="#"><img src="../assets/images/tickitz_blue.png" alt="" /></a>
+          <a href="./home.html"
+            ><img src="../assets/images/tickitz_blue.png" alt=""
+          /></a>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Movie</a></li>
-        <li><a href="#">Buy Ticket</a></li>
-        <li><a class="btn-signin" href="/pages/login.html">Sign In</a></li>
-        <li><a class="btn-signup" href="/pages/register.html">Sign Up</a></li>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./home-movie-list-new.html">Movie</a></li>
+        <li><a href="./order-page.html">Buy Ticket</a></li>
+        <li><a class="btn-signin" href="./login.html">Sign In</a></li>
+        <li><a class="btn-signup" href="./register.html">Sign Up</a></li>
+        <!-- <li>Location</li>
+        <li><img src="../assets/icons/arrow-negative.png" alt="" /></li>
+        <li><img src="../assets/icons/search.png" alt="" /></li>
+        <li><img src="../assets/images/profile-pic-small.png" alt="" /></li> -->
+        <li><img src="../assets/icons/dropdown-menu.png" alt="" /></li>
       </ul>
     </nav>
 
@@ -55,8 +62,8 @@
                 alt="Shield Done Icon"
               />
             </span>
-            <div>Guaranteed</div>
-            <p>
+            <div class="choose-us-reason">Guaranteed</div>
+            <p class="choose-us-p">
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </p>
@@ -64,12 +71,12 @@
           <span>
             <span>
               <img
-                src="../assets/icons/Shield Done.png"
+                src="../assets/icons/check-circle-fill.png"
                 alt="Shield Done Icon"
               />
             </span>
-            <div>Guaranteed</div>
-            <p>
+            <div class="choose-us-reason">Affordable</div>
+            <p class="choose-us-p">
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </p>
@@ -77,12 +84,12 @@
           <span>
             <span>
               <img
-                src="../assets/icons/Shield Done.png"
+                src="../assets/icons/icons8-speech-bubble 1.png"
                 alt="Shield Done Icon"
               />
             </span>
-            <div>Guaranteed</div>
-            <p>
+            <div class="choose-us-reason">24/7 Customer Support</div>
+            <p class="choose-us-p">
               Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
               proin faucibus nibh et sagittis a. Lacinia purus ac amet.
             </p>
@@ -92,7 +99,7 @@
 
       <!-- Exciting Movies -->
       <section class="exciting-movies">
-        <div class="blue-18">UPCOMING MOVIES</div>
+        <div class="blue-18">MOVIES</div>
         <div
           style="
             display: flex;
@@ -101,69 +108,60 @@
             margin-bottom: 12px;
           "
         >
-          <div>Exciting Movies That Should Be</div>
-          <div>Watched Today</div>
+          <div>Exciting Movies That Should Be Watched Today</div>
         </div>
-        <ul>
-          <li class="list-of-exciting">
-            <img
-              class="movie-poster"
-              src="../assets/images/blade-runner.jpg"
-              alt=""
-            />
-            <div class="title">Blade Runner</div>
+
+        <!-- Grid Movies -->
+        <div class="g-movie-list">
+          <!-- Black Widow -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/black-widow.png" alt="" />
+            <h3>Black Widow</h3>
             <div class="genres">
               <ul>
                 <li>Drama</li>
                 <li>Thriller</li>
               </ul>
             </div>
-          </li>
-          <li class="list-of-exciting">
-            <img
-              class="movie-poster"
-              src="../assets/images/the-lighthouse.jpg"
-              alt=""
-            />
-            <div class="title">The Lighthouse</div>
-            <div class="genres">
-              <ul>
-                <li>Drama</li>
-                <li>Thriller</li>
-              </ul>
-            </div>
-          </li>
+          </div>
 
-          <li class="list-of-exciting">
-            <img
-              class="movie-poster"
-              src="../assets/images/prisoners.jpg"
-              alt=""
-            />
-            <div class="title">Prisoners</div>
-            <div class="genres">
-              <ul>
-                <li>Thriller</li>
-                <li>Crime</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="list-of-exciting">
-            <img
-              class="movie-poster"
-              src="../assets/images/the-grand-budapest.jpg"
-              alt=""
-            />
-            <div class="title">The Grand Budapest Hotel</div>
+          <!-- The Witches -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/the-witches.png" alt="" />
+            <h3>The Witches</h3>
             <div class="genres">
               <ul>
                 <li>Comedy</li>
-                <li>Drama</li>
+                <li>Adventure</li>
               </ul>
             </div>
-          </li>
-        </ul>
+          </div>
+
+          <!-- Tenet -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/tenet.png" alt="" />
+            <h3>Tenet</h3>
+            <div class="genres">
+              <ul>
+                <li>Action</li>
+                <li>Sci-Fi</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spiderman -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/spiderman-poster.png" alt="" />
+            <h3>Spiderman</h3>
+            <div class="genres">
+              <ul>
+                <li>Action</li>
+                <li>Adventure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div>
           <a class="blue-18-bold" href="#">
             <div>View All</div>
@@ -175,105 +173,155 @@
       <!-- Upcoming Movies -->
       <section class="upcoming-movies">
         <div class="blue-18">UPCOMING MOVIES</div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 12px;
-          "
-        >
-          <div class="f-exciting-arrow">
-            <div>Exciting Movie Coming Soon</div>
-            <span class="f-left-n-right">
-              <button class="left-arrow">
-                <img
-                  src="../assets/icons/white-arrow-left.png"
-                  alt="Arrow Left"
-                />
-              </button>
-              <button class="right-arrow">
-                <img
-                  src="../assets/icons/white-arrow-right.png"
-                  alt="Arrow Right"
-                /></button
-            ></span>
-          </div>
+
+        <div class="f-exciting-arrow">
+          <div>Exciting Movie Coming Soon</div>
+          <span class="f-left-n-right">
+            <button class="left-arrow">
+              <img
+                src="../assets/icons/white-arrow-left.png"
+                alt="Arrow Left"
+              />
+            </button>
+            <button class="right-arrow">
+              <img
+                src="../assets/icons/white-arrow-right.png"
+                alt="Arrow Right"
+              /></button
+          ></span>
         </div>
-        <ul>
-          <li class="list-of-upcoming">
-            <img
-              class="movie-poster"
-              src="../assets/images/blade-runner.jpg"
-              alt=""
-            />
-            <div class="title">Blade Runner</div>
-            <div class="launched-on">December 2024</div>
+
+        <!-- Grid Movies -->
+        <div class="g-movie-list">
+          <!-- Black Widow -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/black-widow.png" alt="" />
+            <h3>Black Widow</h3>
+            <div class="blue-18-bold">December 2024</div>
             <div class="genres">
               <ul>
                 <li>Drama</li>
                 <li>Thriller</li>
               </ul>
             </div>
-          </li>
-          <li class="list-of-upcoming">
-            <img
-              class="movie-poster"
-              src="../assets/images/the-lighthouse.jpg"
-              alt=""
-            />
-            <div class="title">The Lighthouse</div>
-            <div class="launched-on">January 2024</div>
-            <div class="genres">
-              <ul>
-                <li>Drama</li>
-                <li>Thriller</li>
-              </ul>
-            </div>
-          </li>
+          </div>
 
-          <li class="list-of-upcoming">
-            <img
-              class="movie-poster"
-              src="../assets/images/prisoners.jpg"
-              alt=""
-            />
-            <div class="title">Prisoners</div>
-            <div class="launched-on">June 2024</div>
-            <div class="genres">
-              <ul>
-                <li>Thriller</li>
-                <li>Crime</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="list-of-upcoming">
-            <img
-              class="movie-poster"
-              src="../assets/images/the-grand-budapest.jpg"
-              alt=""
-            />
-            <div class="title">The Grand Budapest Hotel</div>
-            <div class="launched-on">March 2024</div>
+          <!-- The Witches -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/the-witches.png" alt="" />
+            <h3>The Witches</h3>
+            <div class="blue-18-bold">January 2024</div>
             <div class="genres">
               <ul>
                 <li>Comedy</li>
-                <li>Drama</li>
+                <li>Adventure</li>
               </ul>
             </div>
-          </li>
-        </ul>
+          </div>
+
+          <!-- Tenet -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/tenet.png" alt="" />
+            <h3>Tenet</h3>
+            <div class="blue-18-bold">June 2024</div>
+            <div class="genres">
+              <ul>
+                <li>Action</li>
+                <li>Sci-Fi</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spiderman -->
+          <div class="f-singular-movie">
+            <img src="../assets/images/spiderman-poster.png" alt="" />
+            <h3>Spiderman</h3>
+            <div class="blue-18-bold">March 2024</div>
+            <div class="genres">
+              <ul>
+                <li>Action</li>
+                <li>Adventure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Subscribe -->
       <section class="subscribe">
         <div class="subscribe-text">Subscribe to our newsletter</div>
-        <div>
-          <input type="text" /> <input type="text" />
+        <div class="subscribe-input">
+          <input type="text" placeholder="First Name" />
+          <input type="email" placeholder="Email address" />
           <button class="subscribe-button">Subscribe Now</button>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-side-side">
+        <span class="logo-slogan">
+          <img src="../assets/images/tickitz_large.png" alt="" />
+          <div>Stop waiting in line. Buy tickets</div>
+          <div>conveniently, watch movies quietly.</div>
+        </span>
+        <span>
+          <div class="explore">Explore</div>
+          <ul class="explore-list">
+            <li><a href="#">Cinemas</a></li>
+            <li><a href="#">Movies List</a></li>
+            <li><a href="./order-history.html">My Ticket</a></li>
+            <li><a href="#">Notification</a></li>
+          </ul>
+        </span>
+        <span>
+          <div class="sponsor">Our Sponsor</div>
+          <ul class="sponsor-list">
+            <li>
+              <img src="../assets/images/ebv.id 2.png" alt="" />
+            </li>
+            <li>
+              <img src="../assets/images/CineOne21-fitted.png" alt="" />
+            </li>
+            <li><img src="../assets/images/hiflix 2.png" alt="" /></li>
+          </ul>
+        </span>
+        <span>
+          <div class="follow">Follow us</div>
+          <ul class="follow-list">
+            <li>
+              <a href="#">
+                <img src="../assets/icons/facebook.png" alt="Facebook" />
+                <span>Tickitz Cinema id</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../assets/icons/instagram.png"
+                  alt="Instagram"
+                /><span>tickitz.id</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/twitter.png" alt="Twitter" /><span
+                  >tickitz.id</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assets/icons/youtube.png" alt="Youtube" /><span
+                  >Tickitz Cinema id</span
+                ></a
+              >
+            </li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="copyright">© 2020 Tickitz. All Rights Reserved.</div>
+    </footer>
   </body>
 </html>
