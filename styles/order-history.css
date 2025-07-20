@@ -3,6 +3,7 @@
 
 .container-outside {
   background-color: #a0a3bd33;
+  z-index: 99;
 }
 
 .container {
@@ -86,6 +87,8 @@
   position: relative;
 
   box-shadow: 1px 13px 0px -7px #1d4ed880;
+
+  z-index: 1;
 }
 
 .g-card::before {
@@ -97,6 +100,8 @@
 
   top: -34px;
   right: -75px;
+
+  z-index: -1;
 }
 
 .g-card::after {
@@ -108,6 +113,8 @@
 
   top: -70px;
   right: -55px;
+
+  z-index: -1;
 }
 
 .g-acc-rank {

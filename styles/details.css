@@ -5,9 +5,30 @@ body {
   font-family: Mulish;
 }
 
+.movie-header {
+  max-width: 100%;
+  height: 415px;
+  background-image: url(../assets/images/spiderman-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.movie-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .main-section {
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .poster-n-info {

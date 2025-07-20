@@ -3,8 +3,8 @@ nav {
   font-size: 14px;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .navbar li:nth-child(2) {
