@@ -35,6 +35,12 @@
   justify-content: space-between;
 }
 
+.info-set > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4b66;
+}
+
 .btn-set-side {
   background-color: transparent;
   border: 0;
@@ -78,6 +84,8 @@
   grid-template-columns: repeat(2, 1fr);
 
   position: relative;
+
+  box-shadow: 1px 13px 0px -7px #1d4ed880;
 }
 
 .g-card::before {
@@ -292,6 +300,12 @@ main {
   gap: 24px;
 }
 
+.title-ticket-info {
+  font-weight: 400;
+  font-size: 18px;
+  color: #14142b;
+}
+
 .f-ticket-top-bottom {
   margin-bottom: 42px;
   display: flex;
@@ -338,4 +352,39 @@ main {
 .f-total > div:nth-child(2) {
   font-weight: 600;
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  /* NAVBAR, USER SETTING */
+  .navbar > li:nth-child(2),
+  .navbar > li:nth-child(3),
+  .navbar > li:nth-child(4),
+  .navbar > li:nth-child(5),
+  .navbar > li:nth-child(6),
+  .navbar > li:nth-child(7) {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .f-ticket-s-details {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .f-status-payment {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-details-arrow {
+    justify-content: center;
+  }
+
+  .f-ticket-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
