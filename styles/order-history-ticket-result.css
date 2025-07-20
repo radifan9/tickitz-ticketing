@@ -56,7 +56,7 @@
 
 /* HORIZONTAL LINE */
 .full-hr-line {
-  width: 132%;
+  width: 100%;
   border-bottom: 1px solid #dedede;
 }
 
@@ -209,7 +209,133 @@ main {
   gap: 48px;
 }
 
+/* INFO and CINEMA LOC */
 .f-info-cinema {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.f-date-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Ticket Status & Show Details */
+.f-ticket-s-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-status-payment {
+  display: flex;
+  gap: 14px;
+}
+
+.ticket-active {
+  background-color: #00ba8833;
+  padding: 10px 26px;
+  border-radius: 8px;
+
+  color: #00ba88;
+  font-weight: 600;
+}
+
+.ticket-used {
+  color: #6e7191;
+  background-color: #6e719133;
+}
+
+.not-paid {
+  background-color: #e82c2c33;
+  padding: 10px 34px;
+  border-radius: 8px;
+
+  color: #e82c2c;
+  font-weight: 600;
+}
+
+.paid {
+  padding: 10px 44px;
+  color: #1d4ed8;
+  background-color: #1d4ed833;
+}
+
+.f-details-arrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.f-details-arrow > span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+/* TICKET INFORMATION */
+.f-ticket-info {
+  display: flex;
+  align-items: end;
+  gap: 24px;
+}
+
+.f-ticket-top-bottom {
+  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.f-row {
+  display: flex;
+  gap: 22px;
+}
+
+.f-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.f-total {
+  margin-bottom: 62px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.content-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #14142b;
+}
+
+.f-total > div:nth-child(1) {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.f-total > div:nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
 }
