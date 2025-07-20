@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/order-history-ticket-result.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Order History Ticket Result</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#"><img src="../assets/images/tickitz_blue.png" alt="" /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movie</a></li>
+        <li><a href="#">Buy Ticket</a></li>
+        <li><a class="btn-signin" href="#">Sign In</a></li>
+        <li><a class="btn-signup" href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="container-outside">
+      <!-- Container for sidebar + main -->
+      <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <!-- Info + Setting -->
+          <div class="info-set">
+            <span>INFO</span>
+            <button class="btn-set-side">
+              <img src="../assets/icons/setting.png" alt="Setting" />
+            </button>
+          </div>
+
+          <!-- Profile Pic -->
+          <img
+            class="profile-pic"
+            src="../assets/images/profile-pic.png"
+            alt=""
+          />
+
+          <!-- Full Name -->
+          <div class="full-name">Jonas El Rodriguez</div>
+
+          <!-- Account Rank -->
+          <div class="acc-rank">Moviegoers</div>
+
+          <!-- Horizontal Line -->
+          <div class="full-hr-line"></div>
+
+          <!-- Loyalty Points -->
+          <div class="l-p">Loyalty Points</div>
+
+          <!-- Account Card (grid) -->
+          <div class="g-card">
+            <span class="g-acc-rank">Moviegoers</span>
+            <img
+              class="g-star"
+              src="../assets/icons/star.png"
+              alt="Star Icon"
+            />
+            <span class="g-points">
+              <span>320</span>
+              <span>points</span>
+            </span>
+          </div>
+
+          <!-- Points -->
+          <div class="text-points">180 points become a master</div>
+
+          <!-- Progress bar -->
+          <div class="progress-bar"></div>
+        </aside>
+
+        <!-- Main Page -->
+        <main>
+          <header class="header-top">
+            <!-- Acc Setting -->
+            <span>Account Settings</span>
+
+            <!-- Order History -->
+            <span class="selected">Order History</span>
+          </header>
+
+          <!-- Not Paid Ticket -->
+          <div class="f-not-paid-ticket">
+            <!-- Movie Info * Cinema -->
+            <div class="f-info-cinema">
+              <!-- Movie Info -->
+              <div class="f-date-title">
+                <!-- Date -->
+                <div class="date">Tuesday, 07 July 2020 - 04:30pm</div>
+
+                <!-- Movie Name -->
+                <div class="movie-title">Spider-Man: Homecoming</div>
+              </div>
+
+              <!-- Cinema -->
+              <img
+                class="ciname-place"
+                src="../assets/images/CineOne21 2.png"
+                alt="CineOne21"
+              />
+            </div>
+
+            <!-- Horizontal Line -->
+            <div class="full-hr-line"></div>
+
+            <!-- Ticket Status & Show Details -->
+            <div class="f-ticket-s-details">
+              <div class="f-status-payment">
+                <div class="ticket-active">Ticket in active</div>
+                <div class="not-paid">No Paid</div>
+              </div>
+              <div class="f-details-arrow">
+                <span>Show Details</span>
+                <img src="../assets/icons/arrow-down.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Paid Ticket -->
+          <div></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

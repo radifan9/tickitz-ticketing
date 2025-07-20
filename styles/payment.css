@@ -7,6 +7,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 form {
@@ -111,4 +113,116 @@ input[type="text"] {
   background-color: #1d4fd8e3;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* MODAL */
+
+.payment-modal {
+  width: 573px;
+  padding: 25px 14px;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+
+  /* display: none; */
+}
+
+.modal-on {
+  /* display: block; */
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+
+  align-self: center;
+}
+
+.payment-left-right {
+  display: flex;
+  align-items: center;
+}
+
+.payment-label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8692a6;
+}
+
+.no-rek {
+  font-weight: 700;
+  font-size: 18px;
+  color: #14142b;
+  margin-left: 150px;
+}
+
+.btn-copy {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d4ed8;
+  background-color: #ffffff;
+  padding: 12px 12px;
+  border: 1px solid #1d4ed8;
+  border-radius: 5px;
+
+  margin-left: 10px;
+}
+
+.payment-total {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d4ed8;
+
+  margin-left: 400px;
+}
+
+.payment-detail {
+  font-weight: 400;
+  font-size: 16px;
+  color: #a0a3bd;
+}
+
+/* Button */
+.btn-check-pay {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f7f7fc;
+  background-color: #1d4ed8;
+  border: 0;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.btn-pay-later {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1d4ed8;
+  border: 0;
+  background-color: #ffffff;
+
+  align-self: center;
+
+  margin-bottom: 24px;
 }
