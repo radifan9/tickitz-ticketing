@@ -1,0 +1,520 @@
+@import url(./globals.css);
+@import url(./navbar.css);
+
+.container-outside {
+  background-color: #a0a3bd33;
+  z-index: 99;
+}
+
+.container {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-left: 128px;
+  margin-right: 128px;
+
+  display: flex;
+  gap: 32px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 328px;
+  height: fit-content;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.info-set {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-set > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4b66;
+}
+
+.btn-set-side {
+  background-color: transparent;
+  border: 0;
+}
+
+.full-name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #14142b;
+}
+
+.acc-rank {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4b66;
+
+  margin-top: -18px;
+}
+
+/* HORIZONTAL LINE */
+.full-hr-line {
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+
+.l-p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #4e4b66;
+
+  align-self: flex-start;
+}
+
+.g-card {
+  background-color: #1d4ed8;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  position: relative;
+
+  box-shadow: 1px 13px 0px -7px #1d4ed880;
+
+  z-index: 1;
+}
+
+.g-card::before {
+  content: "";
+  padding: 66px;
+  background-color: #ffffff4d;
+  border-radius: 50%;
+  position: absolute;
+
+  top: -34px;
+  right: -75px;
+
+  z-index: -1;
+}
+
+.g-card::after {
+  content: "";
+  padding: 66px;
+  background-color: #ffffff4d;
+  border-radius: 50%;
+  position: absolute;
+
+  top: -70px;
+  right: -55px;
+
+  z-index: -1;
+}
+
+.g-acc-rank {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.g-star {
+  justify-self: flex-end;
+  position: relative;
+  top: -18px;
+  right: -18px;
+}
+
+.g-points > span:nth-child(1) {
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.g-points > span:nth-child(2) {
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.text-points {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4b66;
+}
+
+/* Outer */
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  background-color: #e4e4e4;
+  border-radius: 8px;
+
+  position: relative;
+
+  margin-bottom: 18px;
+}
+
+.progress-bar::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #1d4ed8;
+  border-radius: 8px;
+
+  position: absolute;
+}
+
+/* Inner */
+
+/* MAIN */
+main {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.header-top {
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 70px;
+  padding-left: 3rem;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 18px;
+  color: #aaaaaa;
+
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+
+.selected {
+  color: #14142b;
+  position: relative;
+}
+
+.selected::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #1d4ed8;
+  position: absolute;
+  top: 46px;
+  left: 0;
+}
+
+/* NOT PAID TICKET */
+.f-not-paid-ticket {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 24px;
+  width: 100%;
+  padding: 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* INFO and CINEMA LOC */
+.f-info-cinema {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-date-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Ticket Status & Show Details */
+.f-ticket-s-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-status-payment {
+  display: flex;
+  gap: 14px;
+}
+
+.ticket-active {
+  background-color: #00ba8833;
+  padding: 10px 26px;
+  border-radius: 8px;
+
+  color: #00ba88;
+  font-weight: 600;
+}
+
+.ticket-used {
+  color: #6e7191;
+  background-color: #6e719133;
+}
+
+.not-paid {
+  background-color: #e82c2c33;
+  padding: 10px 34px;
+  border-radius: 8px;
+
+  color: #e82c2c;
+  font-weight: 600;
+}
+
+.paid {
+  padding: 10px 44px;
+  color: #1d4ed8;
+  background-color: #1d4ed833;
+}
+
+.f-details-arrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.f-details-arrow > span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+/* TICKET INFORMATION */
+.f-ticket-info {
+  display: flex;
+  align-items: end;
+  gap: 24px;
+}
+
+.title-ticket-info {
+  font-weight: 400;
+  font-size: 18px;
+  color: #14142b;
+}
+
+.f-ticket-top-bottom {
+  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.f-row {
+  display: flex;
+  gap: 22px;
+}
+
+.f-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.f-total {
+  margin-bottom: 62px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.content-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #14142b;
+}
+
+.f-total > div:nth-child(1) {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.f-total > div:nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  /* NAVBAR, USER SETTING */
+  .navbar > li:nth-child(2),
+  .navbar > li:nth-child(3),
+  .navbar > li:nth-child(4),
+  .navbar > li:nth-child(5),
+  .navbar > li:nth-child(6),
+  .navbar > li:nth-child(7) {
+    display: none;
+  }
+
+  .navbar > li:last-child {
+    margin-left: 48px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .f-info-cinema {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .f-ticket-s-details {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .f-status-payment {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-details-arrow {
+    justify-content: center;
+  }
+
+  .f-ticket-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+
+.ticket-info {
+  font-weight: 400;
+  font-size: 18px;
+  color: #14142b;
+}
+
+/*  --- MODAL --- */
+
+.payment-modal {
+  /* width: 573px; */
+  /* padding: 25px 14px; */
+
+  border-radius: 16px;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+
+  /* display: none; */
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+
+  align-self: center;
+}
+
+.payment-left-right {
+  display: flex;
+  align-items: center;
+}
+
+.payment-label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8692a6;
+}
+
+.no-rek {
+  font-weight: 700;
+  font-size: 18px;
+  color: #14142b;
+  margin-left: 60%;
+}
+
+.btn-copy {
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d4ed8;
+  background-color: #ffffff;
+  padding: 12px 12px;
+  border: 1px solid #1d4ed8;
+  border-radius: 5px;
+
+  margin-left: 10px;
+}
+
+.payment-total {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d4ed8;
+
+  margin-left: 340%;
+}
+
+.payment-detail {
+  font-weight: 400;
+  font-size: 16px;
+  color: #a0a3bd;
+}
+
+.red-text {
+  color: #d00707;
+  font-weight: 400;
+}
+
+/* Button */
+.btn-check-pay {
+  width: 40%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7f7fc;
+  background-color: #1d4ed8;
+  border: 0;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-pay-later {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1d4ed8;
+  border: 0;
+  background-color: #ffffff;
+
+  align-self: center;
+
+  margin-bottom: 24px;
+}

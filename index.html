@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="logo">
+        <img src="../assets/images/tickitz.png" alt="" width="276px" />
+      </div>
+
+      <main class="register">
+        <!-- Step -->
+        <div class="steps">
+          <span class="outer-steps">
+            <div class="steps-num">1</div>
+            <p class="steps-text">Fill Form</p>
+          </span>
+          <span></span>
+          <span class="outer-steps">
+            <div class="steps-num steps-num-off">2</div>
+            <p class="steps-text steps-text-off">Activate</p>
+          </span>
+          <span></span>
+          <span class="outer-steps">
+            <div class="steps-num steps-num-off">3</div>
+            <p class="steps-text steps-text-off">Done</p>
+          </span>
+        </div>
+
+        <!-- Email, Password, Button -->
+        <form class="form-register">
+          <!-- Email -->
+          <div>
+            <label class="user-label" for="email">Email</label> <br />
+            <input
+              class="user-input"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label class="user-label" for="password">Password</label> <br />
+            <input
+              class="user-input"
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <!-- Button & Link -->
+          <div class="container-tAndC">
+            <input id="tAndC" type="checkbox" />
+            <label for="tAndC">I agree to terms & conditions</label>
+          </div>
+
+          <button class="btn-register">Join For Free Now</button>
+        </form>
+
+        <div class="already-have">
+          <span>Already have an account?</span>
+          <a href="./pages/login.html">Log in</a>
+        </div>
+
+        <div class="or">
+          <span></span>
+          <span>Or</span>
+          <span></span>
+        </div>
+
+        <!-- Login using other method -->
+        <div class="login-other">
+          <a href="#" class="login-method">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/google-logo.png"
+              alt="google-logo"
+              class="login-icon"
+            />
+            <span>Google</span>
+          </a>
+
+          <a href="#" class="login-method">
+            <img
+              width="48"
+              height="48"
+              src="../assets/icons/bx_bxl-facebook-circle.png"
+              alt="facebook-circled"
+              class="login-icon"
+            />
+            <span>Facebook</span>
+          </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
