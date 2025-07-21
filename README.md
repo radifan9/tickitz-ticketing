@@ -39,6 +39,4 @@ Welcome to **Tickitz**, a responsive movie ticket booking platform built using a
 - **Frontend**: HTML5, CSS3 (Desktop-first responsive design)
 - **Deployment**: [Vercel](https://vercel.com)
 
-> Note: This version is frontend-only. You can connect it to a backend service or API of your choice.
-
 ---
