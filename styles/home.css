@@ -421,6 +421,11 @@ h3 {
 
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 768px) {
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .hero {
     flex-direction: column;
   }
