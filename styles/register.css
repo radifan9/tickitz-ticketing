@@ -17,6 +17,18 @@ body {
   font-family: Mulish, Arial;
 
   margin-bottom: 64px;
+
+  position: relative;
+}
+
+/* MAIN PAGE + LOGO */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  /* position: relative; */
 }
 
 /* Add Masking */
@@ -29,14 +41,6 @@ body::after {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
-}
-
-/* MAIN PAGE + LOGO */
-.main-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
 }
 
 /* LOGO */
