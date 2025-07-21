@@ -226,6 +226,10 @@ h3 {
   color: #ffffff;
 }
 
+.movie-link {
+  text-decoration: none;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .f-search-bar {

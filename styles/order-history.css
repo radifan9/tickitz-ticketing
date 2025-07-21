@@ -6,6 +6,11 @@
   z-index: 99;
 }
 
+.link-to-page {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
 .container {
   padding-top: 56px;
   padding-bottom: 56px;

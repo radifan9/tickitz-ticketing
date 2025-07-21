@@ -260,6 +260,11 @@ main {
   cursor: pointer;
 }
 
+.link-to-page {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 768px) {
   .container {
