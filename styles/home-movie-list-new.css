@@ -232,6 +232,11 @@ h3 {
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .f-search-bar {
     flex-direction: column;
     margin-bottom: 18px;

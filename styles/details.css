@@ -237,6 +237,11 @@ body {
 
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 768px) {
+  .main-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .image-poster {
     position: relative;
     top: -300px;
