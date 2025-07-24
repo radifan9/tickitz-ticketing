@@ -51,8 +51,20 @@ nav > ul > li > a {
   color: white;
 }
 
+.nav-drop-down {
+  flex-direction: column !important;
+  align-items: flex-end;
+  gap: 28px;
+}
+
+.drop-down {
+  display: block !important;
+  margin-left: 0 !important;
+}
+
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
+  /* Hilangkan menu yang tidak digunakan */
   .navbar li:nth-child(2),
   .navbar li:nth-child(3),
   .navbar li:nth-child(4),
@@ -61,8 +73,8 @@ nav > ul > li > a {
     display: none;
   }
 
-  .navbar li:nth-child(7) {
-    margin-left: 48px;
-    display: inline;
+  .hamburger-menu {
+    margin-left: 320px !important;
+    display: inline !important;
   }
 }

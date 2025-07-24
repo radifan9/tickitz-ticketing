@@ -282,6 +282,10 @@ h3 {
     margin-right: 2rem;
   }
 
+  .title-slogan {
+    margin-bottom: 48px;
+  }
+
   .f-search-bar {
     flex-direction: column;
     margin-bottom: 18px;
