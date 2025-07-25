@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
 
+    <!-- External JS -->
+    <script src="../assets/js/login.js" defer></script>
+
     <!-- Style Sheet -->
     <link rel="stylesheet" href="../styles/login.css" />
     <title>Login</title>
@@ -39,21 +42,30 @@
             <label class="user-label" for="email">Email</label> <br />
             <input
               class="user-input"
-              type="email"
+              name="email"
+              type="text"
               id="email"
               placeholder="Enter your email"
             />
+            <div class="emailError" style="color: red"></div>
           </div>
 
           <!-- Password -->
           <div>
             <label class="user-label" for="password">Password</label> <br />
             <input
-              class="user-input"
+              class="user-input input-password"
+              name="password"
               type="password"
               id="password"
               placeholder="Enter your password"
             />
+            <div class="passwordError">
+              <div class="min8Char"></div>
+              <div class="min1Small"></div>
+              <div class="min1Large"></div>
+              <div class="min1SpecialChar"></div>
+            </div>
           </div>
 
           <!-- Button & Link -->
@@ -61,7 +73,7 @@
             <a href="#">Forgot your password?</a>
           </div>
 
-          <a class="btn-register" href="./home.html">Login</a>
+          <button class="btn-register btn-login" type="submit">Login</button>
         </form>
 
         <div class="or">

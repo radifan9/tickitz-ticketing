@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
 
+    <script src="../assets/js/register-login.js" defer></script>
+
     <!-- Style Sheet -->
     <link rel="stylesheet" href="../styles/register.css" />
     <title>Register</title>
@@ -49,30 +51,39 @@
             <label class="user-label" for="email">Email</label> <br />
             <input
               class="user-input"
-              type="email"
+              name="email"
+              type="text"
               id="email"
               placeholder="Enter your email"
             />
+            <div class="emailError" style="color: red"></div>
           </div>
 
           <!-- Password -->
           <div>
             <label class="user-label" for="password">Password</label> <br />
             <input
-              class="user-input"
+              class="user-input input-password"
+              name="password"
               type="password"
               id="password"
               placeholder="Enter your password"
             />
+            <div class="passwordError">
+              <div class="min8Char"></div>
+              <div class="min1Small"></div>
+              <div class="min1Large"></div>
+              <div class="min1SpecialChar"></div>
+            </div>
           </div>
 
           <!-- Button & Link -->
           <div class="container-tAndC">
-            <input id="tAndC" type="checkbox" />
+            <input name="tAndC" id="tAndC" type="checkbox" />
             <label for="tAndC">I agree to terms & conditions</label>
           </div>
 
-          <button class="btn-register">Join For Free Now</button>
+          <button type="submit" class="btn-register">Join For Free Now</button>
         </form>
 
         <div class="already-have">

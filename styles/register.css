@@ -140,11 +140,15 @@ body::after {
   border-radius: 4px;
 }
 
-.user-input[type="email"],
+.user-input[type="text"],
 .user-input[type="password"] {
   padding: 24px;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* Password Error */
+.email-check {
 }
 
 /* Terms & Conditions */
