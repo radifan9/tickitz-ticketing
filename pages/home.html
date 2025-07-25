@@ -12,26 +12,77 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+
+    <script src="../assets/js/navbar.js" defer></script>
+
     <title>Home</title>
   </head>
   <body>
-    <nav>
-      <ul class="navbar">
+    <nav class="nav-container">
+      <!-- Horizontal Navbar -->
+      <ul class="navbar-horizontal">
         <li>
           <a href="./home.html"
             ><img src="../assets/images/tickitz_blue.png" alt=""
           /></a>
         </li>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./home-movie-list-new.html">Movie</a></li>
-        <li><a href="./order-page.html">Buy Ticket</a></li>
-        <li><a class="btn-signin" href="./login.html">Sign In</a></li>
-        <li><a class="btn-signup" href="./register.html">Sign Up</a></li>
-        <!-- <li>Location</li>
-        <li><img src="../assets/icons/arrow-negative.png" alt="" /></li>
-        <li><img src="../assets/icons/search.png" alt="" /></li>
-        <li><img src="../assets/images/profile-pic-small.png" alt="" /></li> -->
-        <li><img src="../assets/icons/dropdown-menu.png" alt="" /></li>
+        <li class="home"><a href="./home.html">Home</a></li>
+        <li class="movie"><a href="./home-movie-list-new.html">Movie</a></li>
+        <li class="buy-ticket"><a href="./order-page.html">Buy Ticket</a></li>
+        <li class="sign-in">
+          <a class="btn-signin" href="./login.html">Sign In</a>
+        </li>
+        <li class="sign-up">
+          <a class="btn-signup" href="./register.html">Sign Up</a>
+        </li>
+
+        <li class="profile-pic hidden">
+          <img src="../assets/images/profile-pic-small.png" alt="" />
+          <!-- Clicked profile -->
+          <div class="profile-clicked hidden">
+            <div class="profile-name hidden">
+              <p></p>
+            </div>
+            <div class="sign-out">
+              <button class="btn-signout">Sign Out</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="hamburger-menu hidden">
+          <img src="../assets/icons/dropdown-menu.png" alt="" />
+        </li>
+      </ul>
+
+      <!-- Dropdown -->
+      <ul class="navbar-drop hidden">
+        <li>
+          <a href="./home.html"
+            ><img src="../assets/images/tickitz_blue.png" alt=""
+          /></a>
+        </li>
+        <li class="home hidden"><a href="./home.html">Home</a></li>
+        <li class="movie hidden">
+          <a href="./home-movie-list-new.html">Movie</a>
+        </li>
+        <li class="buy-ticket hidden">
+          <a href="./order-page.html">Buy Ticket</a>
+        </li>
+        <li class="sign-in hidden">
+          <a class="btn-signin" href="./login.html">Sign In</a>
+        </li>
+        <li class="sign-up hidden">
+          <a class="btn-signup" href="./register.html">Sign Up</a>
+        </li>
+        <li class="profile-pic hidden">
+          <img src="../assets/images/profile-pic-small.png" alt="" />
+        </li>
+        <li class="profile-name hidden">
+          <p></p>
+        </li>
+        <li class="hamburger-menu">
+          <img src="../assets/icons/dropdown-menu.png" alt="" />
+        </li>
       </ul>
     </nav>
 
