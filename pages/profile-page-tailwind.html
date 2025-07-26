@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Profile Page</title>
+  </head>
+  <body class="bg-slate-100">
+    <header class="flex items-center justify-between bg-white px-8 py-5">
+      <img src="../assets/images/tickitz_blue.png" alt="" />
+
+      <nav class="ml-auto hidden">
+        <ul class="flex gap-12 text-sm">
+          <li class=""><a href="#">Home</a></li>
+          <li class=""><a href="#">Movie</a></li>
+          <li class=""><a href="#">Buy Ticket</a></li>
+        </ul>
+      </nav>
+      <div class="ml-auto flex hidden items-center gap-4 text-base">
+        <div>Location</div>
+        <img src="../assets/icons/arrow-down.png" alt="" />
+        <img src="../assets/icons/search.png" alt="" />
+        <img src="../assets/images/profile-pic-small.png" alt="" />
+      </div>
+
+      <img src="../assets/icons/hamburger-menu.png" alt="" />
+    </header>
+
+    <div class="container flex flex-col gap-9">
+      <header class="flex justify-evenly rounded-2xl bg-white px-12 py-6">
+        <span class="border-b-2 border-blue-700">Account Settings</span>
+        <span>Order History</span>
+      </header>
+
+      <!-- Info and Setting -->
+      <div class="mx-6 rounded-2xl bg-white p-10">
+        <div class="flex items-center justify-between">
+          <span class="text-gray-600">INFO</span>
+          <img class="hidden" src="../assets/icons/setting.png" alt="" />
+        </div>
+
+        <!-- Profile Pic and Data -->
+        <div class="flex flex-col items-center">
+          <img src="../assets/images/profile-pic.png" alt="" />
+          <div class="text-2xl">Jonas El Rodriguez</div>
+          <div class="text-gray-600">Moviegoers</div>
+        </div>
+
+        <!-- Loyalty Card -->
+        <div class="mb-5 flex flex-col items-center gap-3">
+          <div class="self-start">Loyalty Points</div>
+          <div class="relative w-full rounded-xl bg-blue-700 p-9 text-stone-50">
+            <span class="text-lg font-bold">Moviegoers</span>
+            <img
+              class="absolute right-0 top-0"
+              src="../assets/icons/star.png"
+              alt=""
+            />
+            <div class="gap flex items-end gap-1">
+              <span class="text-2xl">320</span
+              ><span class="text-xs">points</span>
+            </div>
+          </div>
+
+          <div class="text-base">180 points become a master</div>
+          <div
+            class="relative h-4 w-full rounded-lg bg-slate-300 after:absolute after:h-4 after:w-[50%] after:rounded-lg after:bg-blue-500 after:content-['']"
+          ></div>
+        </div>
+
+        <!-- Edit Profile Button -->
+        <button
+          class="h-14 w-full rounded-2xl border border-blue-700 p-3 text-blue-700"
+        >
+          Edit Profile
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
