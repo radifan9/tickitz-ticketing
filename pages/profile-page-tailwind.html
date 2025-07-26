@@ -7,37 +7,55 @@
     <title>Profile Page</title>
   </head>
   <body class="bg-slate-100">
-    <header class="flex items-center justify-between bg-white px-8 py-5">
+    <header
+      class="flex items-center justify-between bg-white px-8 py-5 md:px-16"
+    >
       <img src="../assets/images/tickitz_blue.png" alt="" />
 
-      <nav class="ml-auto hidden">
-        <ul class="flex gap-12 text-sm">
+      <nav class="ml-auto">
+        <ul class="hidden gap-12 text-sm md:flex">
           <li class=""><a href="#">Home</a></li>
           <li class=""><a href="#">Movie</a></li>
           <li class=""><a href="#">Buy Ticket</a></li>
         </ul>
       </nav>
-      <div class="ml-auto flex hidden items-center gap-4 text-base">
+      <div class="ml-auto hidden items-center gap-4 text-base md:flex">
         <div>Location</div>
         <img src="../assets/icons/arrow-down.png" alt="" />
         <img src="../assets/icons/search.png" alt="" />
         <img src="../assets/images/profile-pic-small.png" alt="" />
       </div>
 
-      <img src="../assets/icons/hamburger-menu.png" alt="" />
+      <img class="md:hidden" src="../assets/icons/hamburger-menu.png" alt="" />
     </header>
 
-    <div class="container flex flex-col gap-9">
-      <header class="flex justify-evenly rounded-2xl bg-white px-12 py-6">
-        <span class="border-b-2 border-blue-700">Account Settings</span>
+    <!-- Main Page -->
+    <div
+      class="md:grid-cols-[1fr 3fr] container mx-auto grid gap-y-8 md:grid md:py-8"
+    >
+      <!-- Main Page Header -->
+      <header
+        class="flex justify-evenly bg-white px-12 py-6 md:col-start-2 md:rounded-2xl"
+      >
+        <span
+          class="after:trans relative after:absolute after:w-full after:-translate-x-32 after:translate-y-12 after:border-b-2 after:border-blue-700"
+          >Account Settings</span
+        >
         <span>Order History</span>
       </header>
 
-      <!-- Info and Setting -->
-      <div class="mx-6 rounded-2xl bg-white p-10">
+      <!-- Info Section -->
+      <div
+        class="mx-6 rounded-2xl bg-white p-10 md:col-start-1 md:row-span-2 md:row-start-1 md:h-fit"
+      >
+        <!-- Info text and setting button -->
         <div class="flex items-center justify-between">
           <span class="text-gray-600">INFO</span>
-          <img class="hidden" src="../assets/icons/setting.png" alt="" />
+          <img
+            class="hidden md:block"
+            src="../assets/icons/setting.png"
+            alt=""
+          />
         </div>
 
         <!-- Profile Pic and Data -->
@@ -47,10 +65,15 @@
           <div class="text-gray-600">Moviegoers</div>
         </div>
 
+        <!-- Horizontal Line -->
+        <hr class="mb-4 mt-2" />
+
         <!-- Loyalty Card -->
         <div class="mb-5 flex flex-col items-center gap-3">
           <div class="self-start">Loyalty Points</div>
-          <div class="relative w-full rounded-xl bg-blue-700 p-9 text-stone-50">
+          <div
+            class="after:-top-17 after:h-34 after:w-34 before:h-34 before:w-34 relative flex h-40 w-full flex-col justify-between overflow-hidden rounded-xl bg-blue-700 p-9 text-stone-50 before:absolute before:-right-16 before:-top-10 before:rounded-full before:bg-white/30 after:absolute after:-right-10 after:rounded-full after:bg-white/30"
+          >
             <span class="text-lg font-bold">Moviegoers</span>
             <img
               class="absolute right-0 top-0"
@@ -63,7 +86,7 @@
             </div>
           </div>
 
-          <div class="text-base">180 points become a master</div>
+          <div class="text-base text-gray-600">180 points become a master</div>
           <div
             class="relative h-4 w-full rounded-lg bg-slate-300 after:absolute after:h-4 after:w-[50%] after:rounded-lg after:bg-blue-500 after:content-['']"
           ></div>
@@ -71,9 +94,111 @@
 
         <!-- Edit Profile Button -->
         <button
-          class="h-14 w-full rounded-2xl border border-blue-700 p-3 text-blue-700"
+          class="h-14 w-full rounded-2xl border border-blue-700 p-3 text-blue-700 md:hidden"
         >
           Edit Profile
+        </button>
+      </div>
+
+      <!-- Account Setting -->
+      <div class="mx-6 mb-10 rounded-2xl bg-white p-10 md:mx-0">
+        <h2 class="mb-8 text-2xl font-medium">Account Settings</h2>
+
+        <!-- Details Information -->
+        <div class="mb-8 flex flex-col gap-3">
+          <h3 class="">Details Information</h3>
+
+          <!-- Horizontal Line -->
+          <hr class="mb-4 mt-2" />
+
+          <!-- Full Name -->
+          <div class="flex flex-col gap-3">
+            <label class="text-base text-gray-600" for="full-name"
+              >Full Name</label
+            >
+            <input
+              class="rounded-xl border border-neutral-200 px-8 py-3"
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="Jonas El Rodriguez"
+            />
+          </div>
+
+          <!-- E-mail -->
+          <div class="flex flex-col gap-3">
+            <label class="text-base text-gray-600" for="email">E-mail</label>
+            <input
+              class="rounded-xl border border-neutral-200 px-8 py-3"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="jonasrodrigu123@gmail.com"
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="flex flex-col gap-3">
+            <label class="text-base text-gray-600" for="phone-number"
+              >Phone Number</label
+            >
+            <div class="flex rounded-xl border border-neutral-200">
+              <input
+                class="w-1/5 rounded-xl border border-transparent px-8 py-3"
+                type="text"
+                name="country-code"
+                placeholder="+62"
+              />
+              <input
+                class="w-full rounded-xl border border-transparent px-8 py-3"
+                type="text"
+                name="phone-number"
+                placeholder="81445687121"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Account and Privacy -->
+        <div class="mb-8 flex flex-col gap-3">
+          <h3 class="">Account and Privacy</h3>
+
+          <!-- Horizontal Line -->
+          <hr class="mb-4 mt-2" />
+
+          <!-- New Password -->
+          <div class="flex flex-col gap-3">
+            <label class="text-base text-gray-600" for="new-password"
+              >New Password</label
+            >
+            <input
+              class="rounded-xl border border-neutral-200 px-8 py-3"
+              type="password"
+              name="new-password"
+              id="new-password"
+              placeholder="••••••••••"
+            />
+          </div>
+
+          <!-- E-mail -->
+          <div class="flex flex-col gap-3">
+            <label class="text-base text-gray-600" for="confirm-password"
+              >Confirm</label
+            >
+            <input
+              class="rounded-xl border border-neutral-200 px-8 py-3"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="••••••••••"
+            />
+          </div>
+        </div>
+
+        <button
+          class="w-full rounded-lg bg-blue-700 py-2 text-sm font-semibold text-white"
+        >
+          Update changes
         </button>
       </div>
     </div>
