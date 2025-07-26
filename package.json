@@ -1,0 +1,24 @@
+{
+  "name": "tickitz-ticketing",
+  "version": "1.0.0",
+  "description": "Welcome to **Tickitz**, a responsive movie ticket booking platform built using a **Desktop-First** approach. This app allows users to browse movies, book seats, make payments, and manage their ticket history with ease.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radifan9/tickitz-ticketing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/radifan9/tickitz-ticketing/issues"
+  },
+  "homepage": "https://github.com/radifan9/tickitz-ticketing#readme",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  }
+}
