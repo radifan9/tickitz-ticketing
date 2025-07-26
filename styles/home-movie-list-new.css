@@ -119,7 +119,6 @@ main {
 .f-singular-movie {
   & div {
     position: relative;
-
     & .hover-link {
       display: none;
       position: absolute;
@@ -152,9 +151,11 @@ main {
   }
 }
 
-.f-singular-movie > img {
+.f-singular-movie > div > img {
   max-width: 100%;
   height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
 }
 
 h3 {
