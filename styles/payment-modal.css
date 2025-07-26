@@ -159,7 +159,8 @@ input[type="text"] {
 }
 
 .btn-method:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -181,7 +182,8 @@ input[type="text"] {
 
 .btn-pay:hover {
   background-color: #1d4fd8e3;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -203,13 +205,13 @@ input[type="text"] {
 }
 
 .modal-on {
-  /* display: block; */
   position: absolute;
   top: 20%;
   z-index: 2;
 }
 
-main::before {
+/* Masking */
+.mask {
   content: "";
   position: absolute;
   top: 0;
@@ -286,7 +288,8 @@ main::before {
   border: 0;
   border-radius: 4px;
   padding: 14px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
   text-decoration: none;

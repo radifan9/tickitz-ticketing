@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/payment-modal.css" />
+
+    <script src="../assets/js/payment-modal.js" defer></script>
     <title>Payment</title>
   </head>
   <body>
@@ -51,8 +53,8 @@
         </span>
       </div>
 
+      <!-- Payment Form -->
       <form>
-        <!-- Payment Info -->
         <div class="container-payment">
           <h2>Payment Info</h2>
 
@@ -169,7 +171,10 @@
         <!-- Payment Button -->
         <button class="btn-pay">Pay your order</button>
       </form>
-      <section class="payment-modal modal-on">
+
+      <!-- Payment Modal -->
+      <!-- To show modal add class "modal-on" and remove "hidden" -->
+      <section class="payment-modal hidden">
         <h2 class="modal-title">Payment Info</h2>
         <div class="payment-left-right">
           <div class="payment-label">No. Rekening Virtual :</div>

@@ -11,9 +11,10 @@ const signUp = document.querySelector(".sign-up");
 const signOut = document.querySelector(".sign-out");
 const profilePic = document.querySelector(".profile-pic");
 const profileClicked = document.querySelector(".profile-clicked");
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-
-console.log(hamburgerMenu);
+const hamburgerMenuHorizontal = document.querySelector(".hamburger-menu");
+const hamburgerMenuDropdown = document.querySelector(
+  ".navbar-drop .hamburger-menu"
+);
 
 profilePic.addEventListener("click", () => {
   profileClicked.classList.toggle("hidden");
@@ -24,9 +25,9 @@ signOut.addEventListener("click", () => {
   window.location.reload();
 });
 
-hamburgerMenu.addEventListener("click", () => {
-  // navBar.classList.toggle("nav-drop-down");
-  console.log("Masuk hamburger");
+hamburgerMenuHorizontal.addEventListener("click", () => {
+  console.log("Hamburger clicked");
+
   navBarHorizontal.classList.toggle("hidden");
   navBarDrop.classList.toggle("hidden");
 
@@ -36,7 +37,30 @@ hamburgerMenu.addEventListener("click", () => {
   const signIn = navBarDrop.querySelector(".sign-in");
   const signUp = navBarDrop.querySelector(".sign-up");
 
-  console.log(home);
+  home.classList.toggle("hidden");
+  movie.classList.toggle("hidden");
+  buyTicket.classList.toggle("hidden");
+  signIn.classList.toggle("hidden");
+  signUp.classList.toggle("hidden");
+
+  home.classList.toggle("drop-down-block");
+  movie.classList.toggle("drop-down-block");
+  buyTicket.classList.toggle("drop-down-block");
+  signIn.classList.toggle("drop-down-block");
+  signUp.classList.toggle("drop-down-block");
+});
+
+hamburgerMenuDropdown.addEventListener("click", () => {
+  console.log("Hamburger clicked");
+
+  navBarHorizontal.classList.toggle("hidden");
+  navBarDrop.classList.toggle("hidden");
+
+  const home = navBarDrop.querySelector(".home");
+  const movie = navBarDrop.querySelector(".movie");
+  const buyTicket = navBarDrop.querySelector(".buy-ticket");
+  const signIn = navBarDrop.querySelector(".sign-in");
+  const signUp = navBarDrop.querySelector(".sign-up");
 
   home.classList.toggle("hidden");
   movie.classList.toggle("hidden");
