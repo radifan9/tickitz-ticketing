@@ -38,10 +38,10 @@ btnPayLater.addEventListener("click", (e) => {
   paymentModal.classList.toggle("hidden");
   paymentModal.classList.toggle("modal-on");
 
-  // Tumpuk styleElement
+  // Create style element
   const styleElement = document.createElement("style");
 
-  // Define CSS rules for pseudo-elements/classes
+  // Tumpuk styleElement
   styleElement.textContent = `
   main::before {
     content: none;
