@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Library and framework -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="../assets/js/adminChart.js" defer></script>
+
+    <title>Admin Page</title>
+  </head>
+  <body class="bg-slate-100 font-[Mulish]">
+    <header
+      class="flex items-center justify-between bg-white px-8 py-5 md:px-16"
+    >
+      <img src="../assets/images/tickitz_blue.png" alt="" />
+
+      <nav class="ml-auto">
+        <ul class="hidden gap-12 text-sm md:flex">
+          <li class=""><a href="#">Home</a></li>
+          <li class=""><a href="#">Movie</a></li>
+          <li class=""><a href="#">Buy Ticket</a></li>
+        </ul>
+      </nav>
+      <div class="ml-auto hidden items-center gap-4 text-base md:flex">
+        <div>Location</div>
+        <img src="../assets/icons/arrow-down.png" alt="" />
+        <img src="../assets/icons/search.png" alt="" />
+        <img src="../assets/images/profile-pic-small.png" alt="" />
+      </div>
+
+      <img class="md:hidden" src="../assets/icons/hamburger-menu.png" alt="" />
+    </header>
+
+    <!-- Main Page -->
+    <div class="container mx-auto mt-6 flex flex-col gap-y-8 md:py-8">
+      <!-- Info Section -->
+      <div class="mx-6 rounded-2xl bg-white p-10">
+        <h2 class="mb-8 text-2xl font-medium">Sales Chart</h2>
+
+        <!-- Filter Selection -->
+        <div class="mb-6 flex flex-col gap-5">
+          <select
+            class="movie-options w-full rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+          >
+            <option value="" disabled>Movies Name</option>
+            <option value="spiderman">Spiderman: Homecoming</option>
+            <option value="avengers">Avengers: End Game</option>
+            <option value="superman">Superman</option>
+          </select>
+
+          <select
+            class="range-selections w-full rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+          >
+            <option value="" disabled>Time Range</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+
+          <button class="btn-filter rounded-md bg-[#1D4ED8] py-3 text-white">
+            Filter
+          </button>
+        </div>
+
+        <!-- Movie Title and Chart -->
+        <div>
+          <h3 class="movie-title text-base font-semibold">
+            Avengers: End Game
+          </h3>
+          <div class="container-canvas">
+            <canvas class="salesChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Sales -->
+      <div class="mx-6 mb-10 rounded-2xl bg-white p-10">
+        <h2 class="mb-8 text-2xl font-medium">Ticket Sales</h2>
+      </div>
+    </div>
+  </body>
+</html>
