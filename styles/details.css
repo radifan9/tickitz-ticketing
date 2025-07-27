@@ -7,14 +7,25 @@ body {
 }
 
 .movie-header {
-  max-width: 100%;
   height: 415px;
-  background-image: url(../assets/images/spiderman-header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
   position: relative;
+  overflow: hidden;
+}
+
+/* .movie-header > img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+} */
+
+.movie-header > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .movie-header::after {
@@ -40,6 +51,10 @@ body {
 .image-poster {
   position: absolute;
   top: -200px;
+  max-width: 31%;
+  height: auto;
+  aspect-ratio: 10 / 16;
+  object-fit: cover;
 }
 
 /* --- GENRES --- */
@@ -58,8 +73,8 @@ body {
 }
 
 .infos {
-  margin-left: 280px;
-  margin-bottom: 80px;
+  margin-left: 350px;
+  margin-bottom: 110px;
 
   display: flex;
   flex-direction: column;

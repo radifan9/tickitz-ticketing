@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,6 +13,8 @@
     />
 
     <link rel="stylesheet" href="../styles/details.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/getDetails.js" defer></script>
     <title>Details</title>
   </head>
   <body>
@@ -39,62 +41,11 @@
     <main>
       <header class="movie-header">
         <!-- <img src="../assets/images/spiderman-header.png" alt="" /> -->
-        <div></div>
+        <!-- <div></div> -->
       </header>
 
       <section class="main-section">
-        <div class="poster-n-info">
-          <img
-            class="image-poster"
-            src="../assets/images/spiderman-poster.png"
-            alt=""
-          />
-          <span class="infos">
-            <h1>Spider-Man: Homecoming</h1>
-
-            <!-- Genres -->
-            <div class="genres">
-              <ul>
-                <li>Drama</li>
-                <li>Thriller</li>
-              </ul>
-            </div>
-
-            <!-- About Movie -->
-            <div class="about-movie">
-              <span>
-                <div class="title-content">Release Date</div>
-                <div class="content-info">June 28, 2017</div>
-              </span>
-              <span>
-                <div class="title-content">Directed by</div>
-                <div class="content-info">Jon Watss</div>
-              </span>
-              <span>
-                <div class="title-content" title-content>Duration</div>
-                <div class="content-info">2 hours 13 minutes</div>
-              </span>
-              <span>
-                <div class="title-content">Casts</div>
-                <div class="content-info">
-                  Tom Holland, Michael Keaton, Robert Downey Jr
-                </div>
-              </span>
-            </div>
-          </span>
-        </div>
-        <div class="container-synopsis">
-          <h3>Synopsis</h3>
-          <p>
-            Thrilled by his experience with the Avengers, Peter returns home,
-            where he lives with his Aunt May, under the watchful eye of his new
-            mentor Tony Stark, Peter tries to fall back into his normal daily
-            routine - distracted by thoughts of proving himself to be more than
-            just your friendly neighborhood Spider-Man - but when the Vulture
-            emerges as a new villain, everything that Peter holds most important
-            will be threatened.
-          </p>
-        </div>
+        <!-- Add data dynamically -->
 
         <!-- Book Tickets -->
         <div class="container-book">
