@@ -46,31 +46,34 @@
 
     <!-- Main Page -->
     <div class="container mx-auto mt-6 flex flex-col gap-y-8 md:py-8">
-      <!-- Info Section -->
+      <!-- Sales Chart -->
       <div class="mx-6 rounded-2xl bg-white p-10">
         <h2 class="mb-8 text-2xl font-medium">Sales Chart</h2>
 
         <!-- Filter Selection -->
-        <div class="mb-6 flex flex-col gap-5">
+        <div class="mb-6 flex flex-col md:flex-row gap-5">
+
+          <!-- Movie Selection -->
           <select
-            class="movie-options w-full rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+            class="movie-options w-full md:w-fit rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
           >
-            <option value="" disabled>Movies Name</option>
+            <option disabled selected>Movies Name</option>
             <option value="spiderman">Spiderman: Homecoming</option>
             <option value="avengers">Avengers: End Game</option>
             <option value="superman">Superman</option>
           </select>
 
+          <!-- Time Range -->
           <select
-            class="range-selections w-full rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+            class="range-selections w-full md:w-fit rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
           >
-            <option value="" disabled>Time Range</option>
+            <option value="" disabled selected>Time Range</option>
             <option value="daily">Daily</option>
             <option value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>
           </select>
 
-          <button class="btn-filter rounded-md bg-[#1D4ED8] py-3 text-white">
+          <button class="btn-filter rounded-md md:w-fit md:px-11 bg-[#1D4ED8] py-3 text-white">
             Filter
           </button>
         </div>
@@ -89,6 +92,45 @@
       <!-- Ticket Sales -->
       <div class="mx-6 mb-10 rounded-2xl bg-white p-10">
         <h2 class="mb-8 text-2xl font-medium">Ticket Sales</h2>
+
+         <!-- Filter Selection -->
+        <div class="mb-6 flex flex-col md:flex-row gap-5">
+
+          <!-- Category Selection -->
+          <select
+            class="category-options w-full md:w-fit rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+          >
+            <option disabled selected>Category</option>
+            <option value="ebv">ebv.id</option>
+            <option value="cineone21">CineOne21</option>
+            <option value="hiflix">hiflix</option>
+          </select>
+
+          <!-- Location -->
+          <select
+            class="location-selections w-full md:w-fit rounded-lg bg-[#EFF0F6] px-6 py-3 text-[#4E4B66]"
+          >
+            <option value="" disabled selected>Location</option>
+            <option value="bogor">Bogor</option>
+            <option value="purwokerto">Purwokerto</option>
+            <option value="surabaya">Surabaya</option>
+          </select>
+
+          <button class="btn-filter-ticket rounded-md md:w-fit md:px-11 bg-[#1D4ED8] py-3 text-white">
+            Filter
+          </button>
+        </div>
+
+        <!-- Movie Title and Chart -->
+        <div>
+          <h3 class="category-title text-base font-semibold inline">
+            ebv.id,
+          </h3> 
+          <h3 class="location-title text-base font-semibold inline">Bogor</h3>
+          <div>
+            <canvas class="ticketChart"></canvas>
+          </div>
+        </div>
       </div>
     </div>
   </body>
